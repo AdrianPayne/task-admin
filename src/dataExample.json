@@ -1,0 +1,67 @@
+[{
+    "_Id": 1,
+    "Name": "Diseño UI/UX",
+    "Rate": 2,
+    "ImgUrl": "https://www.assaultech.com/wp-content/uploads/2021/07/ui-in-blog-e1577968131857.jpg",
+    "Destinatario": "Sennior",
+    "FechaRealizacion": "13/05/2022",
+    "Status": "Pendiente",
+    "RealizadoPor": "Adrian",
+    "RazondeIncidencia": ""
+},
+{
+    "_Id": 2,
+    "Name": "Cerrar acuerdo con Clinica SL",
+    "Rate": 2,
+    "ImgUrl": "https://www.clinicavespucio.cl/wp-content/uploads/2017/05/Urgencia-Cl%C3%ADnica-Vespucio.jpg",
+    "Destinatario": "Clinica",
+    "FechaRealizacion": "11/06/2022",
+    "Status": "Pendiente",
+    "RealizadoPor": "",
+    "RazondeIncidencia": ""
+},
+{
+    "_Id": 3,
+    "Name": "Apagar incendio",
+    "Rate": 2,
+    "ImgUrl": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Fire_inside_an_abandoned_convent_in_Massueville%2C_Quebec%2C_Canada.jpg/1280px-Fire_inside_an_abandoned_convent_in_Massueville%2C_Quebec%2C_Canada.jpg",
+    "Destinatario": "Orfanato",
+    "FechaRealizacion": "12/07/2022",
+    "Status": "Pendiente",
+    "RealizadoPor": "",
+    "RazondeIncidencia": ""
+},
+{
+    "_Id": 4,
+    "Name": "Ayudar a Eusebio",
+    "Rate": 1,
+    "ImgUrl": "https://feuvertenmarcha.org/wp-content/uploads/2013/02/abuelo-cruzando-calle.jpg",
+    "Destinatario": "Eusebio",
+    "FechaRealizacion": "27/06/2022",
+    "Status": "Pendiente",
+    "RealizadoPor": "",
+    "RazondeIncidencia": ""
+},
+{
+    "_Id": 5,
+    "Name": "Tener una idea para fundar una empresa",
+    "Rate": 3,
+    "ImgUrl": "https://www.bbva.com/wp-content/uploads/2018/04/equipo-startup-bbva-1-e1524492124593.jpg",
+    "Destinatario": "Sennior",
+    "FechaRealizacion": "20/02/2022",
+    "Status": "Completada",
+    "RealizadoPor": "Jose",
+    "RazondeIncidencia": ""
+},
+{
+    "_Id": 6,
+    "Name": "Diversificarse a los NFTs",
+    "Rate": 3,
+    "ImgUrl": "https://cdn.mos.cms.futurecdn.net/8AsM5fpkAi5tDaPZpXheWQ-970-80.jpg.webp",
+    "Destinatario": "Sennior",
+    "FechaRealizacion": "10/01/2020",
+    "Status": "Cancelada",
+    "RealizadoPor": "",
+    "RazondeIncidencia": "Tiene pinta de ser una burbuja..."
+}
+]

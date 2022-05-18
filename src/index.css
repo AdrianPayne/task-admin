@@ -1,13 +1,301 @@
 body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #1E1F21;
+  color: white;
+  padding: 0px 10px 10px 10px;
+  font-family: 'Heebo', sans-serif
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid white;
+}
+
+#home {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid white;
+}
+
+#imgIcon {
+  background-color: #55C3E6;
+  object-fit: cover;
+  object-position: left center;
+  width: 100px;
+  height: 100px;
+  
+
+  display: inline;
+
+  border-radius: 8px;
+  border-style: solid;
+  border-color: white;
+}
+
+h1 {
+  position: relative;
+  display: inline;
+  left: 10px;
+  font-size: 60px;
+}
+
+#profile {
+  max-width: 120px;
+  margin-right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+#profileImg {
+  width:100%;
+  border-radius: 50%;
+}
+
+div {
+  padding: 10px;
+}
+
+#tableOptions {
+  display: flex;
+  justify-content: flex-end;
+  margin-right: 8%;
+}
+
+/* Task Table*/
+#taskTable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 20px;
+  text-align: left;
+}
+
+
+#nameTask:hover {
+  opacity:0.8;
+}
+
+th {
+  font-size: 22px;
+  text-align: left;
+}
+
+td {
+  text-align: left;
+}
+
+.rareTag {
+  border-radius: 8px;
+  width: 90px;
+  display: inline-block;
+  color: white;
+  text-align: center;
+}
+
+.Basica {
+  background-color: green;
+}
+
+.Importante {
+  background: #C47F3E;
+}
+
+.Critica {
+  background: #AF2F2F;
+}
+
+.Completada {
+  color: #75AB78;
+  background: transparent;
+}
+
+.Cancelada {
+  color: #7C7C7C;
+  background: transparent;
+}
+
+/* Filter */
+#tableOptions{
+  display:flex;
+  justify-content: flex-end;
+}
+#filter {
+  padding: 10px 20px;
+  margin: 4px 2px;
+}
+.filterOption {
+  background-color: transparent;
+  border: none;
+  color: white;
+  transition: 1s;
+  opacity: 0.6;
+  animation-name: beginFilterOptions;
+  animation-duration: 0.4s;
+}
+@keyframes beginFilterOptions {
+  from {opacity: 0;}
+  to {opacity: 0.6;}
+}
+.filterOption:hover {opacity: 1}
+.filterOption:active {
+  opacity: 0;
+}
+
+#sort {
+  padding: 10px 20px;
+  margin: 4px 2px;
+}
+
+#buttonResetFilter {
+  background-color: transparent;
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  margin: 4px 2px;
+  opacity: 0.6;
+  transition: 0.3s;
+  animation-name: beginFilterOptions;
+  animation-duration: 0.4s;
+}
+#buttonResetFilter:hover {opacity: 1}
+
+/* Task Detail */
+
+#taskDetailBackground {
+
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#taskDetail {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: auto;
+  height: auto;
+  background-color: #1E1F21;
+  color: white;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  z-index: 3;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+}
+
+#taskDetailTexto {
+  display: flex;
+  justify-content: space-around;
+}
+
+#taskDetailImg {
+  display: flex;
+  justify-content: center;
+  padding-top: 30px;
+}
+
+#imgTask {
+  width: 600px;
+
+  border-radius: 20px;
+  border-style: solid;
+  border-color: white;
+}
+
+#taskDetailButtons {
+  display: flex;
+  justify-content: center;
+}
+
+#buttonFinish {
+  border-color: #04AA6D;
+  color: green;
+  font-size: 16px;
+  background-color: transparent;;
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+#buttonFinish:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#buttonCancel {
+  border-color: #f44336;
+  color: red;
+  font-size: 16px;
+  background-color: transparent;
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+
+#buttonCancel:hover {
+  background: #f44336;
+  color: white;
+}
+
+
+#buttonUndo{
+
+  border-color: white;
+  color: white;
+  font-size: 16px;
+  background-color: transparent;
+  width: 50%;
+  padding: 10px 20px;
+  border-radius: 15px;
+}
+#buttonUndo:hover {
+  background-color: #04AA6D;
+  color: white;
+}
+
+#cancelDetailBackground {
+  position: fixed; /* Sit on top of the page content */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+  z-index: 4; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+#cancelDetail {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  z-index: 5;
+
+  background-color: #1E1F21;
+  width: auto;
+  height: auto;
+
+  border-radius: 8px;
+  border-style: solid;
+  border-color: white;
 }
