@@ -6,8 +6,12 @@ A task admin frontend with a mocked json
 [Figma link](https://www.figma.com/file/wohek10VgBv8NGJfmEnQBH/Sennior-Task-List?node-id=22%3A38)
 
 ## Interfaces
-![image](https://user-images.githubusercontent.com/8972362/168949800-d86f78db-8d26-45f7-a888-79aa9f825fe5.png)
-![image](https://user-images.githubusercontent.com/8972362/168949865-6377541c-6cb6-4c52-b84f-420e63d054d0.png)
+<div align="center">
+  <img src="https://user-images.githubusercontent.com/8972362/168949800-d86f78db-8d26-45f7-a888-79aa9f825fe5.png" alt="Home"/>
+  <p>Home</p>
+  <img src="https://user-images.githubusercontent.com/8972362/168949865-6377541c-6cb6-4c52-b84f-420e63d054d0.png" alt="Detail"/>
+  <p>Task detail</p>
+</div>
 
 
 ## Available Scripts
